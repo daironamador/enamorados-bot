@@ -1,0 +1,17 @@
+{
+  "name": "emparejados-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dairon Amador",
+  "license": "ISC",
+  "description": "Haz que tu canal de Discord sea más divertido con Emparejados Bot, este bot te ayudará a crear un sistema de emparejamiento entre tus miembros de tu servidor, ¡a disfrutar de tu canal de Discord más divertido y más interactivo!",
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0",
+    "firebase-admin": "^13.3.0"
+  }
+}
