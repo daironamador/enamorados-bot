@@ -102,19 +102,6 @@ Puedes subir el bot a cualquier servidor Node.js o usar servicios como:
 
 ---
 
-## ❤️ Autor
-
-Creado por **Dairon Amador**  
-Web: [daironamador.com](https://daironamador.com)
-
----
-
-## 📝 Licencia
-
-MIT © 2025 - Puedes modificar y usar libremente el proyecto.
-
----
-## Post Data:
 
 ## 🧠 Registrar los Slash Commands
 
@@ -147,3 +134,16 @@ Routes.applicationGuildCommands(process.env.CLIENT_ID, 'TU_GUILD_ID')
 ```
 
 Esto los registra solo en ese servidor y se actualizan **al instante**.
+
+## ❤️ Autor
+
+Creado por **Dairon Amador**  
+Web: [daironamador.com](https://daironamador.com)
+
+---
+
+## 📝 Licencia
+
+MIT © 2025 - Puedes modificar y usar libremente el proyecto.
+
+---
