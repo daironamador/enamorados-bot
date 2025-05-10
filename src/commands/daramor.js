@@ -11,7 +11,7 @@ module.exports = {
     const parejaSnap = await parejaRef.get();
 
     if (!parejaSnap.exists) {
-      return interaction.reply({ content: 'No tienes pareja aún 💔', ephemeral: true });
+      return interaction.reply({ content: 'No tienes pareja aún 💔', flags: 64 });
     }
 
     const data = parejaSnap.data();
@@ -22,7 +22,7 @@ module.exports = {
     const cooldownSnap = await cooldownRef.get();
 
     if (cooldownSnap.exists && now - cooldownSnap.data().last < 6 * 60 * 60 * 1000) {
-      return interaction.reply({ content: '💤 Ya diste amor. Inténtalo más tarde.', ephemeral: true });
+      return interaction.reply({ content: '💤 Ya diste amor. Inténtalo más tarde.', flags: 64 });
     }
 
     let nuevoProgreso = data.progreso + 20;

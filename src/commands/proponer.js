@@ -15,7 +15,7 @@ module.exports = {
     const target = interaction.options.getUser('usuario');
 
     if (user.id === target.id) {
-      return interaction.reply({ content: 'No puedes proponerte a ti mismo 😅', ephemeral: true });
+      return interaction.reply({ content: 'No puedes proponerte a ti mismo 😅', flags: 64 });
     }
 
     const userDoc = db.collection('parejas').doc(user.id);
@@ -24,7 +24,7 @@ module.exports = {
     const [userData, parejaData] = await Promise.all([userDoc.get(), parejaDoc.get()]);
 
     if (userData.exists || parejaData.exists) {
-      return interaction.reply({ content: 'Alguien ya está emparejado 😳', ephemeral: true });
+      return interaction.reply({ content: 'Alguien ya está emparejado 😳', flags: 64 });
     }
 
     await db.collection('solicitudes').doc(target.id).set({

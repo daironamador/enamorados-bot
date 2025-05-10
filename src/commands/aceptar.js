@@ -10,7 +10,7 @@ module.exports = {
     const solicitudDoc = await db.collection('solicitudes').doc(user.id).get();
 
     if (!solicitudDoc.exists) {
-      return interaction.reply({ content: 'No tienes propuestas pendientes 😢', ephemeral: true });
+      return interaction.reply({ content: 'No tienes propuestas pendientes 😢', flags: 64 });
     }
 
     const de = solicitudDoc.data().de;

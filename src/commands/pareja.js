@@ -11,7 +11,7 @@ module.exports = {
     const parejaSnap = await parejaRef.get();
 
     if (!parejaSnap.exists) {
-      return interaction.reply({ content: 'No tienes pareja aún 💔', ephemeral: true });
+      return interaction.reply({ content: 'No tienes pareja aún 💔', flags: 64 });
     }
 
     const data = parejaSnap.data();

@@ -112,3 +112,38 @@ Web: [daironamador.com](https://daironamador.com)
 ## 📝 Licencia
 
 MIT © 2025 - Puedes modificar y usar libremente el proyecto.
+
+---
+## Post Data:
+
+## 🧠 Registrar los Slash Commands
+
+Cada vez que agregues o modifiques comandos como `/proponer`, `/aceptar`, etc., debes registrar los comandos en la API de Discord usando este script:
+
+```bash
+node deploy-commands.js
+```
+
+Esto es necesario para que los comandos aparezcan y funcionen en Discord.
+
+### ⚠️ Nota:
+- Este script **solo necesita ejecutarse una vez** por cada cambio en la estructura de comandos.
+- Si solo cambias la lógica interna (no el nombre, descripción ni opciones), **no necesitas volver a ejecutar el script**.
+
+---
+
+## 📦 Registro en un servidor de pruebas (modo desarrollo)
+
+Si deseas registrar los comandos **solo en un servidor específico** (ideal para pruebas), reemplaza esta línea en `deploy-commands.js`:
+
+```js
+Routes.applicationCommands(process.env.CLIENT_ID)
+```
+
+Por esta (y coloca tu `GUILD_ID` real):
+
+```js
+Routes.applicationGuildCommands(process.env.CLIENT_ID, 'TU_GUILD_ID')
+```
+
+Esto los registra solo en ese servidor y se actualizan **al instante**.
