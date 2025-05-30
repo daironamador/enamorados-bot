@@ -137,13 +137,13 @@ Esto los registra solo en ese servidor y se actualizan **al instante**.
 
 ## ❤️ Autor
 
-Creado por **Dairon Amador**  
+Creado por **Dairon Amador & Carlos Ynfante**  
 Web: [daironamador.com](https://daironamador.com)
 
 ---
 
 ## 📝 Licencia
 
-MIT © 2025 - Puedes modificar y usar libremente el proyecto.
+MIT © 2025 - Puedes modificar y usar libremente el proyecto para que tu servidor de Discord sea un poco más realista.
 
 ---
